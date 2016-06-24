@@ -1,0 +1,304 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/style/w3.css">
+	<link rel="stylesheet" href="assets/style/demo.css">
+	<link rel="stylesheet" href="assets/style/theme_demo.css">	
+
+<title>Show time</title>
+
+</head>
+
+<body class="w3-theme-l4">
+	<div class="w3-container w3-theme-d3 w3-padding-large w3-center l12 s12">
+		
+		<h2 class="header_main w3-wide "><kbd>PRADHAN MANTRI</kbd></h2>
+	
+	</div>
+
+	<div class="margin-top-bottom-10"></div>
+
+	<div class="w3-row s12">
+
+		<div class="flex-container w3-teal ">
+<?php
+error_reporting(E_ALL);
+
+$dir ="video/";
+$a= scandir($dir);
+//echo($a[4]);
+/*for($x=2;$x=sizeof($a);$x++){
+	echo($a[$x]);
+}
+*/
+foreach ($a as $key => $value) {
+
+if($value=="."){
+	continue;
+}	
+elseif($value==".."){
+	continue;
+}
+else {
+	echo
+	" 
+			<div class='flex-item w3-center w3-col l4 s12'>
+
+				<video width='320' height='240'>
+			  		<source src='".$dir."".$value."' type='video/mp4'>
+				</video>
+
+				<p>Episode : '".$value."'</p>
+
+
+
+			</div> ";
+}
+
+
+
+}
+
+//print_r($a);
+
+
+
+	
+			
+?>
+			<!-- <div class="flex-item  w3-center w3-col l4 s12">
+				
+				<a href="video.html?path=20rshan Raval.mp4">
+					<video width="320" height="240">
+					  <source src="Darshan Raval.mp4" type="video/mp4">
+					</video>
+				</a>
+				<p>Episode : 2</p>
+			</div>
+
+			<div class="flex-item  w3-center w3-col l4 s12">
+
+				<video width="320" height="240">
+				  <source src="Darshan Raval.mp4" type="video/mp4">
+				</video>
+				<p>Episode : 3</p>
+			</div>
+
+			
+			<div class="flex-item  w3-center w3-col l4 s12">
+
+				<video width="320" height="240">
+			  		<source src="Darshan Raval.mp4" type="video/mp4">
+				</video>
+				<p>Episode : 4</p>
+
+			</div>
+
+			<div class="flex-item  w3-center w3-col l4 s12">
+
+				<video width="320" height="240">
+			  		<source src="Darshan Raval.mp4" type="video/mp4">
+				</video>
+				<p>Episode : 5</p>
+
+			</div>
+
+			<div class="flex-item  w3-center w3-col l4 s12">
+
+				<video width="320" height="240">
+			  		<source src="Darshan Raval.mp4" type="video/mp4">
+				</video>
+				<p>Episode : 6</p>
+
+			</div>
+
+			<div class="flex-item  w3-center w3-col l4 s12">
+
+				<video width="320" height="240">
+			  		<source src="Darshan Raval.mp4" type="video/mp4">
+				</video>
+				<p>Episode : 7</p>
+
+			</div>
+
+			<div class="flex-item  w3-center w3-col l4 s12">
+
+				<video width="320" height="240">
+			  		<source src="Darshan Raval.mp4" type="video/mp4">
+				</video>
+				<p>Episode : 8</p>
+
+			</div>
+
+			<div class="flex-item  w3-center w3-col l4 s12">
+
+				<video width="320" height="240">
+			  		<source src="Darshan Raval.mp4" type="video/mp4">
+				</video>
+				<p>Episode : 9</p>
+
+			</div>
+
+			<div class="flex-item  w3-center w3-col l4 s12">
+
+				<video width="320" height="240">
+			  		<source src="Darshan Raval.mp4" type="video/mp4">
+				</video>
+				<p>Episode : 10</p>
+
+			</div>
+
+			<div class="flex-item  w3-center w3-col l4 s12">
+
+				<video width="320" height="240">
+			  		<source src="Darshan Raval.mp4" type="video/mp4">
+				</video>
+				<p>Episode : 11</p>
+
+			</div>
+
+			<div class="flex-item  w3-center w3-col l4 s12">
+
+				<video width="320" height="240">
+			  		<source src="Darshan Raval.mp4" type="video/mp4">
+				</video>
+				<p>Episode : 12</p>
+
+			</div>
+
+			<div class="flex-item  w3-center w3-col l4 s12">
+
+				<video width="320" height="240">
+			  		<source src="Darshan Raval.mp4" type="video/mp4">
+				</video>
+				<p>Episode : 13</p>
+
+			</div>
+
+			<div class="flex-item  w3-center w3-col l4 s12">
+
+				<video width="320" height="240">
+			  		<source src="Darshan Raval.mp4" type="video/mp4">
+				</video>
+				<p>Episode : 14</p>
+
+			</div>
+
+			<div class="flex-item  w3-center w3-col l4 s12">
+
+				<video width="320" height="240">
+			  		<source src="Darshan Raval.mp4" type="video/mp4">
+				</video>
+				<p>Episode : 15</p>
+
+			</div>
+
+			<div class="flex-item  w3-center w3-col l4 s12">
+
+				<video width="320" height="240">
+			  		<source src="Darshan Raval.mp4" type="video/mp4">
+				</video>
+				<p>Episode : 16</p>
+
+			</div>
+
+			<div class="flex-item  w3-center w3-col l4 s12">
+
+				<video width="320" height="240">
+			  		<source src="Darshan Raval.mp4" type="video/mp4">
+				</video>
+				<p>Episode : 17</p>
+
+			</div>
+
+			<div class="flex-item  w3-center w3-col l4 s12">
+
+				<video width="320" height="240">
+			  		<source src="Darshan Raval.mp4" type="video/mp4">
+				</video>
+				<p>Episode : 18</p>
+
+			</div>
+
+			<div class="flex-item  w3-center w3-col l4 s12">
+
+				<video width="320" height="240">
+			  		<source src="Darshan Raval.mp4" type="video/mp4">
+				</video>
+				<p>Episode : 19</p>
+
+			</div>
+
+			<div class="flex-item  w3-center w3-col l4 s12">
+
+				<video width="320" height="240">
+			  		<source src="Darshan Raval.mp4" type="video/mp4">
+				</video>
+				<p>Episode : 20</p>
+
+			</div>
+
+			<div class="flex-item  w3-center w3-col l4 s12">
+
+				<video width="320" height="240">
+			  		<source src="Darshan Raval.mp4" type="video/mp4">
+				</video>
+				<p>Episode : 21</p>
+
+			</div>
+
+			<div class="flex-item  w3-center w3-col l4 s12">
+
+				<video width="320" height="240">
+			  		<source src="Darshan Raval.mp4" type="video/mp4">
+				</video>
+				<p>Episode : 22</p>
+
+			</div>
+
+			<div class="flex-item  w3-center w3-col l4 s12">
+
+				<video width="320" height="240">
+			  		<source src="Darshan Raval.mp4" type="video/mp4">
+				</video>
+				<p>Episode : 23</p>
+
+			</div>
+
+			<div class="flex-item  w3-center w3-col l4 s12">
+
+				<video width="320" height="240">
+			  		<source src="Darshan Raval.mp4" type="video/mp4">
+				</video>
+				<p>Episode : 24</p>
+
+			</div>
+
+			<div class="flex-item  w3-center w3-col l4 s12">
+
+				<video width="320" height="240">
+			  		<source src="Darshan Raval.mp4" type="video/mp4">
+				</video>
+				<p>Episode : 25</p>
+
+			</div>
+
+			<div class="flex-item  w3-center w3-col l4 s12">
+
+				<video width="320" height="240">
+			  		<source src="Darshan Raval.mp4" type="video/mp4">
+				</video>
+				<p>Episode : 26</p>
+
+			</div>
+ -->		</div>
+
+	</div>
+
+</body>
+
+</html>
